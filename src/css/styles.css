@@ -1,0 +1,115 @@
+/* ESTILOS DEL NAVBAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav__logo-text{
+    font-family: 'Lalezar', sans-serif;
+    font-size: 10px;
+}
+
+/* 1. Usar justify-content: space-between para distribuir logo, menú y botón */
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #304C53;
+    padding: 10px 30px; /* Relleno vertical y horizontal */
+    width: 100%;
+}
+
+/* 2. Tamaño de la imagen del logo */
+.nav__logo-img {
+    width: 65px;
+    height: auto;
+}
+
+/* 3. Menú centrado con espacio entre enlaces */
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Espacio uniforme entre las opciones del menú */
+    list-style: none;
+}
+
+/* 4. Estilos de los enlaces */
+.nav__menu-link {
+    text-decoration: none;
+    color: #AFE0E7;
+    font-size: 20px;
+    font-family: 'Lalezar', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: auto;
+}
+
+/* 5. Estilos del botón derecho */
+.nav__menu-button {
+    background: #5A2F25;
+    border: none;
+    border-radius: 4px;
+    padding: 22px 28px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar_container {
+        display: grid;
+        /* Creamos una cuadrícula de 2 columnas: Logo a la izq, Botón a la der. */
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+    }
+
+    /* Forzamos que el logo esté en la esquina superior izquierda */
+    .nav__logo-img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    /* Forzamos que el botón de inicio de sesión esté en la esquina superior derecha */
+    .nav__menu-button {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    /* El menú de enlaces baja a la segunda fila ocupando todo el ancho de forma centrada */
+    .nav__menu {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        margin-top: 10px;
+        padding-top: 8px;
+        border-top: 1px solid rgba(175, 224, 231, 0.2); /* Una línea sutil opcional para separar */
+        gap: 12px;
+        justify-content: space-around; /* Distribuye uniformemente los links en móviles */
+        width: 100%;
+    }
+
+    .nav__menu-link {
+        font-size: 10px; /* Tamaño legible en pantallas pequeñas */
+    }
+}
+
+
+/*ESTILOS DEL MAIN*/
+
+
+/*ESTILOS DEL ¿Como funciona?*/
+
+
+/*ESTILOS DEL ENCUENTRA TU CAMINO */
+
+
+/*ESTILOS DEL SOBRE NOSOTROS*/
+
+
+/*ESTILOS DEL FOOTER*/
