@@ -101,7 +101,81 @@ nav__logo-text{
 
 
 /*ESTILOS DEL MAIN*/
+.main {
+    background: #F9EDEA;
+    padding: 40px 0;
+    overflow: hidden;
+    text-align: center;
+}
 
+/* Filas de carreras (fijas) */
+.main__careers {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.main__careers span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #E3A593;
+}
+
+/* Contenido central */
+.main__content {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.main__title {
+    font-family: 'Lalezar', sans-serif;
+    font-size: clamp(48px, 8vw, 90px);
+    color: #5A2F25;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.main__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #304C53;
+    margin-bottom: 30px;
+}
+
+.main__button {
+    display: inline-block;
+    background: #BF6B54;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 14px 32px;
+    border-radius: 12px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.main__button:hover {
+    background: #A5563F;
+    transform: translateY(-2px);
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+    .main__careers {
+        gap: 30px;
+    }
+    .main__careers span {
+        font-size: 16px;
+    }
+    .main__text {
+        font-size: 16px;
+    }
+}
 
 /*ESTILOS DEL ¿Como funciona?*/
 
