@@ -177,8 +177,271 @@ nav__logo-text{
     }
 }
 
-/*ESTILOS DEL ¿Como funciona?*/
+/* ESTILOS DE ¿CÓMO FUNCIONA? */
+.how-it-works {
+    background: #F9EDEA;
+    padding: 60px 20px;
+}
 
+.how-it-works__title {
+    font-family: 'Lalezar', sans-serif;
+    font-size: clamp(38px, 5vw, 56px);
+    color: #5A2F25;
+    margin-bottom: 40px;
+    text-align: left;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.how-it-works__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card--cream {
+    background: #FFF5F2;
+}
+
+.card--blue {
+    background: #BCE3EC;
+}
+
+.card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #5A2F25;
+    line-height: 1.1;
+}
+
+.card__sub {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #304C53;
+    margin-top: 4px;
+}
+
+.card__badge {
+    width: 38px;
+    height: 38px;
+    background: #AFE0E7;
+    color: #5A2F25;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card__badge--white {
+    background: #FFFFFF;
+}
+
+.card__icon-box {
+    background: #E8CBC3;
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__icon-box--blue {
+    background: #89C7D4;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot--teal { background: #304C53; }
+.dot--brown { background: #5A2F25; }
+.dot--coral { background: #BF6B54; }
+
+.card__dots-h {
+    display: flex;
+    gap: 8px;
+}
+
+.card__dots-v {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Ubicación de los elementos en la Retícula (Grid) */
+.card--step-1 {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 170px;
+}
+.card--step-1 .card__top-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.card--step-1 .card__bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card--step-2 {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    min-height: 170px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card--step-2 .card__main-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.card--step-2 .card__corner-icon {
+    align-self: flex-end;
+}
+
+.card--step-6 {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: 250px;
+}
+.card--step-6 .card__top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card--step-3 {
+    grid-column: 3;
+    grid-row: 2;
+    min-height: 250px;
+}
+.card--step-3 .card__top-right-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+.card--step-3 .card__bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card--step-5 {
+    grid-column: 1;
+    grid-row: 3;
+    min-height: 160px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.card--step-5 .card__middle-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card--step-4 {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+    min-height: 160px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.card--step-4 .card__left-col {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card--ai-container {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card--ai {
+    background: #BF6B54;
+    color: white;
+    border-radius: 20px;
+    padding: 25px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.card--ai p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #FFFFFF;
+}
+
+.pills-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pill {
+    height: 24px;
+    border-radius: 12px;
+}
+
+.pill--teal-long { background: #304C53; width: 60px; }
+.pill--brown-circle { background: #5A2F25; width: 24px; border-radius: 50%; }
+.pill--coral-long { background: #BF6B54; width: 80px; }
+
+@media (max-width: 768px) {
+    .how-it-works__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .card--step-1,
+    .card--step-2,
+    .card--step-3,
+    .card--step-4,
+    .card--step-5,
+    .card--step-6,
+    .card--ai-container {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+        min-height: auto;
+    }
+
+    .card--step-2, .card--step-4, .card--step-5 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
 
 /*ESTILOS DEL ENCUENTRA TU CAMINO */
 
