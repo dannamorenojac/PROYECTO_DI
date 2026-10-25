@@ -177,8 +177,136 @@ nav__logo-text{
     }
 }
 
-/*ESTILOS DEL ¿Como funciona?*/
+/* ESTILOS DE ¿CÓMO FUNCIONA? */
+.how-it-works {
+    background: #F9EDEA;
+    padding: 60px 20px;
+    text-align: center;
+}
 
+.how-it-works__title {
+    font-family: 'Lalezar', sans-serif;
+    font-size: clamp(36px, 5vw, 48px);
+    color: #5A2F25;
+    margin-bottom: 40px;
+}
+
+.how-it-works__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    min-height: 200px;
+}
+
+.card--cream {
+    background: #FFF5F2;
+    border: 2px solid #F2DCD6;
+}
+
+.card--blue {
+    background: #D9EEF3;
+    border: 2px solid #BCE3EC;
+}
+
+.card--ai {
+    background: #BF6B54;
+    color: white;
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card__number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card--cream .card__number {
+    background: #AFE0E7;
+    color: #304C53;
+}
+
+.card--blue .card__number {
+    background: #FFFFFF;
+    color: #304C53;
+}
+
+.card h3 {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 22px;
+    color: #5A2F25;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #304C53;
+}
+
+.card--ai p {
+    color: white;
+}
+
+.card__dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot--teal { background: #304C53; }
+.dot--brown { background: #5A2F25; }
+.dot--coral { background: #BF6B54; }
+
+.card__icon {
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .how-it-works__grid {
+        grid-template-columns: 1fr;
+    }
+    .card--ai {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
 
 /*ESTILOS DEL ENCUENTRA TU CAMINO */
 
