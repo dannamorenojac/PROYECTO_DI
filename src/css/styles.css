@@ -445,6 +445,107 @@ nav__logo-text{
 
 /*ESTILOS DEL ENCUENTRA TU CAMINO */
 
+.seccion-encuentra-camino {
+    font-family: Roboto, sans-serif;
+    color: #333;
+    padding: 60px 20px;
+    background-color: #F9EDEA;
+}
+
+.seccion-encuentra-camino .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #F9EDEA; 
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.seccion-encuentra-camino .header-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.seccion-encuentra-camino .header-section h1 {
+    color: #BC6C50;
+    font-size: 28px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.seccion-encuentra-camino .header-section h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.seccion-encuentra-camino .header-section p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.seccion-encuentra-camino .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.seccion-encuentra-camino .card {
+    background-color: transparent;
+    text-align: center;
+    padding: 15px;
+}
+
+.seccion-encuentra-camino .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.seccion-encuentra-camino .card h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.seccion-encuentra-camino .card p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+
+.seccion-encuentra-camino .btn-info {
+    display: inline-block;
+    font-size: 12px;
+    color: #777;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 5px 15px;
+    border-radius: 15px;
+    transition: background-color 0.2s;
+}
+
+.seccion-encuentra-camino .btn-info:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.seccion-encuentra-camino .btn-info {
+    display: inline-block;
+    font-size: 12px;
+    color: #777;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 5px 15px;
+    border-radius: 15px;
+    transition: background-color 0.2s;
+}
 
 /*ESTILOS DEL SOBRE NOSOTROS*/
 
