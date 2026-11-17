@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkYourPath</title>
+    
+    <!-- Etiqueta para cargar fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jeju+Gothic&family=Lalezar&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Etiqueta para cargar hoja de estilos CSS -->
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    
+    <!-- Etiqueta para restablecer estilos de los navegadores -->
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <!-- Sección Footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Etiqueta para cargar un favicon-->
+    <link rel="shortcut icon" href="/src/images/logo - spark.png" type="image/x-icon">
+
+</head>
+
+<!-- Etiqueta para información a los usuarios -->
+<body>
+    <!-- Start - Section Header NAV -->
+    <header>
+        <nav class="navbar_container">
+            <div class="nav__logo">
+                <img src="/src/images/logo - spark.png" alt="Logo de SparkYourPath" class="nav__logo-img">
+                <h1 class="nav__logo-text">SparkYourPath</h1>
+            </div>
+            <ul class="nav__menu">
+                <li class="nav__menu-item"><a href="#main" class="nav__menu-link">INICIO</a></li>
+                <li class="nav__menu-item"><a href="#funcionamiento" class="nav__menu-link">FUNCIONAMIENTO</a></li>
+                <li class="nav__menu-item"><a href="#gustos" class="nav__menu-link">GUSTOS</a></li>
+                <li class="nav__menu-item"><a href="#encuentra-tu-camino" class="nav__menu-link">PRUEBA</a></li>
+                <li class="nav__menu-item"><a href="#sobre-nosotros" class="nav__menu-link">SOBRE NOSOTROS</a></li>
+            </ul>
+            <button class="nav__menu-button">INICIO SESION</button>
+        </nav>
+    </header>
+    <!-- End - Section Header NAV-->
+
+
+    <!-- Start - Section Main -->
+<section class="main" id="main">
+    <!-- Fila superior de carreras -->
+    <div class="main__careers">
+        <span>Medicina</span>
+        <span>Desarrollo de Software</span>
+        <span>Psicología</span>
+        <span>Arquitectura</span>
+        <span>Diseño Gráfico</span>
+    </div>
+
+    <!-- Contenido central -->
+    <div class="main__content">
+        <h2 class="main__title">¿Qué sigue ahora?</h2>
+        <p class="main__text">
+            ¿Qué sigue ahora? Sabemos que elegir una carrera puede ser difícil,
+            por eso te ayudamos a descubrir tus intereses, conocer tus habilidades y
+            explorar opciones profesionales para que tomes una decisión informada
+            sobre tu futuro.
+        </p>
+        <a href="#encuentra-tu-camino" class="main__button">Descubre tu vocación →</a>
+    </div>
+
+    <!-- Fila inferior de carreras -->
+    <div class="main__careers">
+        <span>Administración</span>
+        <span>Enfermería</span>
+        <span>Derecho</span>
+        <span>Inteligencia Artificial</span>
+        <span>Educación</span>
+        <span>Marketing</span>
+    </div>
+</section>
+
+    <!-- End - Section Main -->
+    
+
+    <!-- Start - Section ¿Como funciona?  -->
+    <section class="how-it-works" id="funcionamiento">
+        <h2 class="how-it-works__title">Cómo funciona?</h2>
+        
+        <div class="how-it-works__grid">
+
+            <!-- PASO 1 -->
+            <div class="card card--step-1 card--cream">
+                <div class="card__top-row">
+                    <div class="card__icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5A2F25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                    </div>
+                    <div class="card__text-group">
+                        <h3>Regístrate</h3>
+                        <p class="card__sub">Es gratis</p>
+                    </div>
+                </div>
+                <div class="card__bottom-row">
+                    <div class="card__dots-h">
+                        <span class="dot dot--teal"></span>
+                        <span class="dot dot--brown"></span>
+                        <span class="dot dot--coral"></span>
+                    </div>
+                    <span class="card__badge">1</span>
+                </div>
+            </div>
+
+            <!-- PASO 2 -->
+            <div class="card card--step-2 card--blue">
+                <div class="card__main-content">
+                    <div class="card__dots-v">
+                        <span class="dot dot--coral"></span>
+                        <span class="dot dot--brown"></span>
+                        <span class="dot dot--teal"></span>
+                    </div>
+                    <span class="card__badge card__badge--white">2</span>
+                    <div class="card__text-group">
+                        <h3>Realiza nuestro test</h3>
+                        <p class="card__sub">Aprende sobre ti y tus gustos</p>
+                    </div>
+                </div>
+                <div class="card__corner-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#304C53" stroke-width="2"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+                </div>
+            </div>
+
+            <!-- PASO 3 -->
+            <div class="card card--step-3 card--cream">
+                <div class="card__top-right-dots">
+                    <span class="dot dot--teal"></span>
+                    <span class="dot dot--brown"></span>
+                    <span class="dot dot--coral"></span>
+                </div>
+                <div class="card__text-group">
+                    <h3>Obten resultados</h3>
+                    <p class="card__sub">Analiza lo que te salió</p>
+                </div>
+                <div class="card__bottom-row">
+                    <span class="card__badge">3</span>
+                    <div class="card__icon-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5A2F25" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PASO 4 -->
+            <div class="card card--step-4 card--blue">
+                <div class="card__left-col">
+                    <div class="card__dots-v">
+                        <span class="dot dot--teal"></span>
+                        <span class="dot dot--brown"></span>
+                        <span class="dot dot--coral"></span>
+                    </div>
+                    <span class="card__badge card__badge--white">4</span>
+                </div>
+                <div class="card__text-group">
+                    <h3>Revisa a fondo lo recomendado</h3>
+                    <p class="card__sub">aprueba y descarta</p>
+                </div>
+                <div class="card__corner-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#304C53" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+            </div>
+
+            <!-- PASO 5 -->
+            <div class="card card--step-5 card--cream">
+                <div class="card__left-section">
+                    <div class="card__icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5A2F25" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                </div>
+                <div class="card__middle-section">
+                    <h3>Interactúa</h3>
+                    <p class="card__sub">Deja tus comentarios</p>
+                    <div class="card__dots-h">
+                        <span class="dot dot--teal"></span>
+                        <span class="dot dot--brown"></span>
+                        <span class="dot dot--coral"></span>
+                    </div>
+                </div>
+                <span class="card__badge">5</span>
+            </div>
+
+            <!-- PASO 6 -->
+            <div class="card card--step-6 card--blue">
+                <div class="card__top-row">
+                    <div class="card__icon-box card__icon-box--blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#304C53" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    </div>
+                    <span class="card__badge card__badge--white">6</span>
+                </div>
+                <div class="card__text-group">
+                    <h3>Reflexiona y decide</h3>
+                    <p class="card__sub">Entiende que deseas y elige</p>
+                </div>
+                <div class="card__dots-h">
+                    <span class="dot dot--teal"></span>
+                    <span class="dot dot--brown"></span>
+                    <span class="dot dot--coral"></span>
+                </div>
+            </div>
+
+            <!-- RECUADRO CENTRAL IA (Colocado al final del HTML) -->
+            <div class="card--ai-container">
+                <div class="pills-row">
+                    <span class="pill pill--teal-long"></span>
+                    <span class="pill pill--brown-circle"></span>
+                    <span class="pill pill--coral-long"></span>
+                </div>
+                
+                <div class="card card--ai">
+                    <p>Nos ayudamos de la Inteligencia Artificial para buscar que carrera se adapta a lo que te interesa y eres habil.</p>
+                </div>
+
+                <div class="pills-row">
+                    <span class="pill pill--coral-long"></span>
+                    <span class="pill pill--brown-circle"></span>
+                    <span class="pill pill--teal-long"></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End - Section ¿Como funciona?  -->
+
+    <!-- Start - Section Encuentra tu camino -->
+    <section class="Encuentra-tu-camino" id="encuentra-tu-camino">
+        <div class="seccion-encuentra-camino">
+            <div class="container">
+                <!-- Encabezado -->
+                <div class="header-section">
+                    <h1>ENCUENTRA TU CAMINO</h1>
+                    <h2>Carreras que conectan contigo</h2>
+                    <p>
+                        Descubre opciones profesionales según tus intereses, tus gustos y las actividades que más disfrutas.<br>
+                        <strong>¿Qué te gusta hacer?</strong>
+                    </p>
+                </div>
+                    <!-- Secciones / Tarjetas -->
+                    <div class="grid-container">
+                        
+                        <!-- 1. Tecnología -->
+                        <div class="card">
+                            <img src="src/images/tecnologia.png" alt="Tecnología">
+                            <h3>Tecnología</h3>
+                            <p>Si te gusta programar, resolver problemas y crear aplicaciones.</p>
+                            <a href="#" class="btn-info">Más información &rarr;</a>
+                        </div>
+
+                        <!-- 2. Arte y diseño -->
+                        <div class="card">
+                            <img src="src/images/arte.png" alt="Arte y diseño">
+                            <h3>Arte y diseño</h3>
+                            <p>Si disfrutas dibujar, diseñar y expresar tus ideas.</p>
+                            <a href="#" class="btn-info">Más información &rarr;</a>
+                        </div>
+
+                        <!-- 3. Construcción y diseño -->
+                        <div class="card">
+                            <img src="src/images/construccion.png" alt="Construcción y diseño">
+                            <h3>Construcción y diseño</h3>
+                            <p>Si te gusta imaginar espacios, diseñar y construir.</p>
+                            <a href="#" class="btn-info">Más información &rarr;</a>
+                        </div>
+
+                        <!-- 4. Negocios -->
+                        <div class="card">
+                            <img src="src/images/negocios.png" alt="Negocios">
+                            <h3>Negocios</h3>
+                            <p>Si te interesa emprender, organizar y administrar proyectos.</p>
+                            <a href="#" class="btn-info">Más información &rarr;</a>
+                        </div>
+
+                        <!-- 5. Salud -->
+                        <div class="card">
+                            <img src="src/images/salud.png" alt="Salud">
+                            <h3>Salud</h3>
+                            <p>Si te interesa cuidar a las personas y aprender sobre el cuerpo humano.</p>
+                            <a href="#" class="btn-info">Más información &rarr;</a>
+                        </div>
+
+                        <!-- 6. Ciencia y naturaleza -->
+                        <div class="card">
+                            <img src="src/images/ciencia.png" alt="Ciencia y naturaleza">
+                            <h3>Ciencia y naturaleza</h3>
+                            <p>Si te gusta investigar, experimentar y descubrir cómo funciona el mundo.</p>
+                            <a href="#" class="btn-info">Más información &rarr;</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End - Section Encuentra tu camino -->
+
+
+    <!-- Start - Section Sobre Nosotros -->
+<section class="sobre-nosotros" id="sobre-nosotros">
+        <div class="contenedor-nosotros">
+            <div class="texto-nosotros">
+                <h2>SOBRE NOSOTROS</h2>
+                <h3>Tu futuro comienza con una pregunta.</h3>
+                <p>Somos un equipo de seis estudiantes comprometidos con ayudar a los jóvenes a descubrir sus intereses, habilidades y talentos mediante un test vocacional.</p>
+                <p>Nuestro objetivo es orientar a cada persona en la elección de su carrera profesional, brindándole una herramienta sencilla, accesible y confiable que le permita tomar decisiones informadas sobre su futuro académico y laboral.</p>
+                <p class="destacado">¡Descubre tu potencial y construye tu futuro con nosotros!</p>
+            </div>
+            
+            <div class="imagen-nosotros">
+                <img src="src/images/somos.png" alt="Equipo de estudiantes">
+            </div>
+        </div>
+
+        <!-- Franja inferior de carreras -->
+        <div class="franja-carreras">
+            <div class="carreras-lista arriba">
+                <span>Ciberseguridad</span>
+                <span>Ciencia de Datos</span>
+                <span>Energías Renovables y Sostenibles</span>
+            </div>
+            
+            <div class="cta-test">
+                <h4>Preparado para descubrir tu futuro</h4>
+                <button class="btn-test">Realiza tu test gratuito</button>
+            </div>
+
+            <div class="carreras-lista abajo">
+                <span>Negocios Digitales</span>
+                <span>Deporte</span>
+                <span>Electricidad</span>
+                <span>Mecatrónica</span>
+                <span>Psicología Clínica</span>
+            </div>
+        </div>
+    </section>
+    <!-- End - Section Sobre Nosotros -->
+
+
+    <!-- Start - Section Servicios -->
+    <section class="servicios" id="servicios">
+    <div class="servicios__contenedor">
+
+        <div class="servicios__contenido">
+            <h2 class="servicios__titulo">NUESTROS SERVICIOS</h2>
+            <p class="servicios__subtitulo">Todo lo que necesitas para descubrir tu vocación.</p>
+
+            <div class="servicios__grid">
+                <article class="servicios__item">
+                    <div class="servicios__icono"><i class="fa-solid fa-clipboard-list"></i></div>
+                    <h3>Test vocacional</h3>
+                    <p>Responde preguntas sencillas y conoce tus intereses y habilidades.</p>
+                </article>
+
+                <article class="servicios__item">
+                    <div class="servicios__icono"><i class="fa-solid fa-comments"></i></div>
+                    <h3>Comparte tu opinión</h3>
+                    <p>Deja tus comentarios y cuéntanos cómo fue tu experiencia.</p>
+                </article>
+
+                <article class="servicios__item">
+                    <div class="servicios__icono"><i class="fa-solid fa-chart-simple"></i></div>
+                    <h3>Resultados personalizados</h3>
+                    <p>Recibe un análisis claro de tus resultados para tomar decisiones informadas.</p>
+                </article>
+
+                <article class="servicios__item">
+                    <div class="servicios__icono"><i class="fa-solid fa-compass"></i></div>
+                    <h3>Explora carreras</h3>
+                    <p>Conoce más sobre cada opción profesional y compara lo que te interesa.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="servicios__imagen">
+            <img src="src/images/Services.png" alt="Estudiante explorando sus opciones de carrera">
+        </div>
+
+    </div>
+    </section>
+
+    <!-- End - Section Servicios -->
+
+    
+    <!-- Start - Section Contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contacto__contenedor">
+
+            <h2 class="contacto__titulo">CONTÁCTANOS</h2>
+            <p class="contacto__subtitulo">
+                ¿Tienes dudas sobre tu futuro profesional?
+                Estamos aquí para ayudarte.
+            </p>
+
+            <div class="contacto__contenido">
+
+                <!-- Información de contacto -->
+                <div class="contacto__informacion">
+                    <h3>ESTAMOS PARA AYUDARTE</h3>
+                    <p>
+                        En SparkYourPath queremos ayudarte
+                        a descubrir tus habilidades e intereses.
+                        Si tienes alguna pregunta, comunícate
+                        con nosotros.
+                    </p>
+
+                    <div class="contacto__dato">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>0967648902</span>
+                    </div>
+
+                    <div class="contacto__dato">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>0965347908</span>
+                    </div>
+
+                    <div class="contacto__dato">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Orientación vocacional para estudiantes</span>
+                    </div>
+                </div>
+
+                <!-- Formulario de contacto -->
+                <form class="contacto__formulario">
+
+                    <label for="contacto-nombre">Nombre completo</label>
+                    <input type="text" id="contacto-nombre"
+                           name="nombre"
+                           placeholder="Ingresa tu nombre"
+                           required>
+
+                    <label for="contacto-correo">Correo electrónico</label>
+                    <input type="email" id="contacto-correo"
+                           name="correo"
+                           placeholder="Ingresa tu correo"
+                           required>
+
+                    <label for="contacto-mensaje">Mensaje</label>
+                    <textarea id="contacto-mensaje"
+                              name="mensaje"
+                              rows="5"
+                              placeholder="Escribe tu mensaje..."
+                              required></textarea>
+
+                    <button type="submit" class="contacto__boton">
+                        Enviar mensaje
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End - Section Contacto -->
+
+    
+    <!-- Star - Section App-->
+    <section class="container__app">
+        <div class="mobile">
+            <h2>Descarga la aplicación</h2>
+            <p class="mobile__description">Nuestra aplicación web te acompaña en un paso tan importante como escoger
+                tu carrera profesional. En nuestra plataforma podrás realizar un test interactivo que te guiará en 
+                esta decisión, además de encontrar información detallada sobre todas las carreras, incluyendo descripciones
+                completas y las universidades estan disponibles. </p>
+            <div class="mobile__buttons">
+                <img src="./src/images/appstore.png" alt="PlayStore" loading="lazy">
+                <img src="./src/images/googleplay.png" alt="GooglePlay" loading="lazy">
+            </div>
+        </div>
+        <div class="mobile__img">
+            <img src="./src/images/appCelular.png" alt="App de la plataforma" loading="lazy">
+        </div>
+    </section>
+    <!-- End - Section App-->
+
+    <!-- Start - Section Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            
+            <!-- Columna 1: Branding -->
+            <div class="footer-brand">
+            <div class="brand-header">
+                <img src="src/images/logo%20-%20spark.png" alt="Vocación Creativa Logo" class="brand-logo">
+                <div class="brand-title">
+                VOCACION<br>CREATIVA
+                </div>
+            </div>
+            <p class="brand-description">
+                Descubre lo que te apasiona y conviértelo en tu futuro.
+            </p>
+            </div>
+
+        <!-- Columna 2: Menú y Para Estudiantes -->
+        <div class="footer-column">
+            <h3><i class="fa-solid fa-bars"></i> Menú</h3>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">¿Quiénes somos?</a></li>
+                <li><a href="#">¿Qué te gusta hacer?</a></li>
+            </ul>
+
+                <div class="sub-section">
+                    <h3><i class="fa-solid fa-user"></i> Para Estudiantes</h3>
+                    <ul>
+                    <li><a href="#">Crear una nueva cuenta</a></li>
+                    <li><a href="#">Test Vocacional</a></li>
+                    </ul>
+                </div>
+                </div>
+
+            <!-- Columna 3: Carreras Populares -->
+                <div class="footer-column">
+                <h3><i class="fa-solid fa-building-columns"></i> Carreras populares</h3>
+                <ul>
+                    <li><a href="#">Tecnología en Desarrollo de Software</a></li>
+                    <li><a href="#">Ingeníera Civil</a></li>
+                    <li><a href="#">Turismo</a></li>
+                    <li><a href="#">Arquitectura</a></li>
+                    <li><a href="#">Medicina</a></li>
+                </ul>
+                </div>
+
+        <!-- Columna 4: Artículos, Contacto y Redes Sociales -->
+        <div class="footer-column">
+            <h3><i class="fa-solid fa-newspaper"></i> Artículos Populares</h3>
+        
+            <div class="sub-section contact-social-container">
+                <!-- Contacto -->
+                    <div class="contact-info">
+                    <h3><i class="fa-solid fa-phone"></i> Contactanos</h3>
+                    <p>0967648902</p>
+                    <p>0965347908</p>
+                    </div>
+
+                <!-- Redes Sociales -->
+                <div class="social-media">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Línea divisoria horizontal -->
+    <hr class="footer-divider">
+
+    <!-- Sección Inferior (Cookies y Nombre de Grupo) -->
+        <!-- Sección Inferior (Cookies y Nombre de Grupo) -->
+    <div class="footer-bottom">
+        <a href="#" class="cookies-link">
+            Política de Privacidad y Utilización de Cookies 
+            <i class="fa-solid fa-cookie-bite"></i>
+        </a>
+
+        <div class="group-info">
+            &copy; 2026 GRUPO 3 - Todos los derechos reservados
+        </div>
+    </div>
+
+    <!-- NUEVA DECORACIÓN INFERIOR -->
+    <div class="footer-decoration" aria-hidden="true">
+
+    <span class="decoration-item item-1">
+        <i class="fa-solid fa-book-open"></i></span>
+
+    <span class="decoration-item item-2">
+        <i class="fa-solid fa-lightbulb"></i></span>
+
+    <span class="decoration-item item-3">
+        <i class="fa-solid fa-graduation-cap"></i></span>
+
+    <span class="decoration-item item-4">
+        <i class="fa-solid fa-laptop"></i></span>
+
+    <span class="decoration-item item-5">
+        <i class="fa-solid fa-star"></i></span>
+
+    </div>
+
+</footer>
+<!-- End - Section Footer -->
+    </body>
+    </html>
